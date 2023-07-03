@@ -19,6 +19,7 @@
       "@/*": ["./*"],
       "@/utils/helpers": ["./src/utils/helpers"],
       "@/utils/constants": ["./src/utils/constants"],
+      "@/utils/api": ["./src/utils/api"],
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
