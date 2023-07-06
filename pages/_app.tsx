@@ -1,9 +1,7 @@
-import { test } from '@/src/utils';
 import type { AppProps } from 'next/app';
 
-import '@/styles/globals.css';
-
-
+import '@/assets/styles/fonts.css';
+import '@/assets/styles/globals.css';
 
 const App = ({ Component, pageProps }: AppProps) => <Component {...pageProps} />;
 

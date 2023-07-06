@@ -1,5 +1,4 @@
 import type { AxiosInstance } from 'axios';
-
 import axios from 'axios';
 
 interface ApiConstructorParams {
@@ -8,6 +7,7 @@ interface ApiConstructorParams {
 
 export class API {
   public baseUrl: string;
+
   public request: AxiosInstance;
 
   constructor(options: ApiConstructorParams) {
@@ -15,9 +15,8 @@ export class API {
 
     this.request = axios.create({
       baseURL: options.baseUrl,
-      timeout: 1000,
       headers: {
-        authorization: `Bearer ${process.env.SRAPI_API_TOKEN}`
+        authorization: `Bearer ${process.env.STRAPI_API_TOKEN}`
       }
     });
   }
